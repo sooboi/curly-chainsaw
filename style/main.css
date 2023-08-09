@@ -1,0 +1,265 @@
+/* 폰트 */
+
+@font-face {
+  font-family: "TAEBAEKmilkyway";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/TAEBAEKmilkyway.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "IAMAPLAYER";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-2@1.0/IAMAPLAYER.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* 폰트 크기 */
+
+:root {
+  --xlarge: 170px;
+  --large: 28px;
+  --medium: 18px;
+  --small: 16px;
+  --xsmall: 14px;
+  --xxsmall: 12px;
+}
+
+/* body */
+
+body {
+  margin: 0 auto;
+  width: 100%;
+  font-family: "TAEBAEKmilkyway";
+  background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/b3be1dae-3caa-4d45-be6c-3de586ba95e2/deaka30-36755335-1c4d-479f-b576-ac71b1655d72.jpg/v1/fill/w_1192,h_670,q_70,strp/dreamy_night_by_bisbiswas_deaka30-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTA4MCIsInBhdGgiOiJcL2ZcL2IzYmUxZGFlLTNjYWEtNGQ0NS1iZTZjLTNkZTU4NmJhOTVlMlwvZGVha2EzMC0zNjc1NTMzNS0xYzRkLTQ3OWYtYjU3Ni1hYzcxYjE2NTVkNzIuanBnIiwid2lkdGgiOiI8PTE5MjAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.p93mbweLKbEoLMCsR8r_SaUsIuHMxmRhq5-429ORE10");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  color: white;
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+  width: 100%;
+}
+
+.main-container .main-wrapper {
+  text-align: center;
+}
+
+/* 날짜 & 시간 */
+
+.date {
+  font-family: "IAMAPLAYER";
+  margin-bottom: 10px;
+}
+
+.time {
+  font-family: "IAMAPLAYER";
+}
+
+.main-wrapper .date {
+  font-size: var(--large);
+}
+
+.main-wrapper .time {
+  font-size: var(--xlarge);
+  font-weight: 400;
+  margin-top: -35px;
+}
+
+/* 검색창 */
+
+.main-wrapper .search {
+  display: flex;
+  justify-content: center;
+}
+
+.search #search-input {
+  width: 600px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: var(--medium);
+  padding: 15px 0px;
+  border-radius: 30px;
+  border: 0px;
+  text-align: center;
+  margin-top: -10px;
+  outline: none;
+  transition: all 0.5s;
+}
+
+.search #search-input:focus {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  transition: all 0.5s;
+}
+
+.search #search-input::placeholder {
+  color: whitesmoke;
+  font-size: var(--medium);
+}
+
+/* 명언 */
+
+.quote {
+  text-align: center;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: var(--small);
+  font-weight: 300;
+  min-width: 600px;
+  padding: 0 10px;
+  bottom: 0;
+  margin-bottom: 10px;
+}
+
+/* 북마크 */
+
+.bookmark-toggle {
+  width: 100px;
+  padding: 15px 30px;
+  font-size: var(--medium);
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  display: flex;
+  justify-content: flex-end;
+  cursor: pointer;
+  transition: all 0.5s;
+  z-index: 2;
+}
+
+.bookmark-bar {
+  width: 300px;
+  top: 0;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  right: -300px;
+  color: white;
+  text-align: center;
+  padding-top: 50px;
+  transition: all 0.5s;
+  z-index: 1;
+}
+
+.bookmark-item-wrapper {
+  padding: 30px;
+}
+
+.bookmark-item-add-btn {
+  padding: 10px;
+  font-size: var(--small);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: rgba(241, 241, 241, 0.2);
+  margin-bottom: 35px;
+  margin-top: 10px;
+  transition: all 0.5s;
+}
+
+.bookmark-item-add-btn:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: all 0.5s;
+}
+
+.bookmark-item-input-form {
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: rgba(241, 241, 241, 0.2);
+  padding: 12px;
+  font-size: var(--small);
+  margin: 20px 0px;
+}
+
+.bookmark-item-input-form .bookmark-input {
+  margin-bottom: 12px;
+}
+
+.bookmark-item-input-form .bookmark-input .label {
+  margin-bottom: 3px;
+  font-size: var(--xsmall);
+}
+
+.bookmark-item-input-form .bookmark-input input {
+  width: 200px;
+  height: 20px;
+  border-radius: 5px;
+  margin: 5px;
+  outline: none;
+}
+
+.bookmark-item-input-btn {
+  display: flex;
+  justify-content: space-between;
+  font-size: var(--xsmall);
+  margin-top: 5px;
+}
+
+.bookmark-item-input-btn div {
+  padding: 5px 35px;
+  border-radius: 5px;
+  border: rgba(241, 241, 241, 0.2) 0.5px solid;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.bookmark-item-input-btn div:hover {
+  padding: 5px 35px;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.bookmark-list a {
+  color: white;
+  display: flex;
+  text-decoration: none;
+}
+
+.bookmark-list .url-icon {
+  margin-right: 8px;
+}
+
+.url-icon img {
+  vertical-align: middle;
+}
+
+.bookmark-list .bookmark-item {
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: rgba(255, 255, 255, 0.1);
+  font-size: var(--small);
+  padding: 15px;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bookmark-item .del-btn {
+  color: lightgray;
+  vertical-align: center;
+  font-size: var(--xxsmall);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.bookmark-item .del-btn:hover {
+  color: white;
+  transition: all 0.3s;
+  font-size: var(--small);
+}
