@@ -1,4 +1,4 @@
-### 바닐라 javascript 로 구글 커스텀 페이지 만들기. <br/>
+### 바닐라 JavaScript 로 구글 커스텀 페이지 만들기. <br/>
 -------
 
 <img width="600px" src="https://blog.kakaocdn.net/dn/bHSz0F/btsqKhvmEHC/Pi9IyJmZNediG6zFjJSG8k/img.gif">
