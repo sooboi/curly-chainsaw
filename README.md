@@ -1,6 +1,6 @@
 ##  📌 바닐라 JavaScript 로 구글 커스텀 페이지 만들기 
 
-<img width="600px" src="https://blog.kakaocdn.net/dn/bHSz0F/btsqKhvmEHC/Pi9IyJmZNediG6zFjJSG8k/img.gif">
+![Aug-12-2023 00-36-44](https://github.com/sooboi/curly-chainsaw/assets/103011139/ebf25c2d-4476-4eae-9fcc-a4b1c5a3c203)
 
 ###  🪧 Content :
 + 기초의 중요성과 자바스크립트를 복습하기 위해 제작했습니다. 
