@@ -30,10 +30,14 @@
 /* body */
 
 body {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   margin: 0 auto;
   width: 100%;
   font-family: "TAEBAEKmilkyway";
-  background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/b3be1dae-3caa-4d45-be6c-3de586ba95e2/deaka30-36755335-1c4d-479f-b576-ac71b1655d72.jpg/v1/fill/w_1192,h_670,q_70,strp/dreamy_night_by_bisbiswas_deaka30-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTA4MCIsInBhdGgiOiJcL2ZcL2IzYmUxZGFlLTNjYWEtNGQ0NS1iZTZjLTNkZTU4NmJhOTVlMlwvZGVha2EzMC0zNjc1NTMzNS0xYzRkLTQ3OWYtYjU3Ni1hYzcxYjE2NTVkNzIuanBnIiwid2lkdGgiOiI8PTE5MjAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.p93mbweLKbEoLMCsR8r_SaUsIuHMxmRhq5-429ORE10");
+  background-image: url("https://source.unsplash.com/user/sueboi/likes");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
@@ -78,6 +82,7 @@ body {
 /* 검색창 */
 
 .main-wrapper .search {
+  margin-top: 50px;
   display: flex;
   justify-content: center;
 }
@@ -89,7 +94,7 @@ body {
   font-size: var(--medium);
   padding: 15px 0px;
   border-radius: 30px;
-  border: 0px;
+  border: none;
   text-align: center;
   margin-top: -10px;
   outline: none;
@@ -122,12 +127,26 @@ body {
   margin-bottom: 10px;
 }
 
+/* 추가 */
+
+.view-info img {
+  margin-top: 30px;
+  width: 300px;
+  transition: all 1s;
+}
+
+.view-info img:hover {
+  transform: scale(1.2);
+  transition: all 1s;
+}
+
 /* 북마크 */
 
 .bookmark-toggle {
   width: 100px;
   padding: 15px 30px;
   font-size: var(--medium);
+  font-weight: 700;
   position: fixed;
   top: 0px;
   right: 0px;
@@ -142,6 +161,7 @@ body {
   width: 300px;
   top: 0;
   height: 100%;
+  overflow: scroll;
   background-color: rgba(0, 0, 0, 0.7);
   position: fixed;
   right: -300px;
@@ -150,6 +170,10 @@ body {
   padding-top: 50px;
   transition: all 0.5s;
   z-index: 1;
+}
+
+.bookmark-bar::-webkit-scrollbar {
+  display: none;
 }
 
 .bookmark-item-wrapper {
